@@ -5,7 +5,7 @@ namespace Skaiciuokles.Tests
     class CarLeasingCalculatorWhitResiduaValueTest : TestBase
     {
         [Test]
-        public static void MonthlyPaymentForCarWhitresidualValueTest()
+        public static void MonthlyPaymentForCarWhitResidualValueTest()
         {
             carLeasingCalculatorPage.NavigateToDefaultPage()
 

@@ -8,7 +8,7 @@ namespace Skaiciuokles.Page
     internal class CarLeasingCalculatorPage : BasePage
     {
         private const string PageAddress = "https://www.luminor.lt/lt/privatiems/auto-lizingas#tabblock";
-        private IWebElement LeasingWhitresidualValue => Driver.FindElement(By.CssSelector("[for= 'edit-type-flres']"));
+        private IWebElement LeasingWhitResidualValue => Driver.FindElement(By.CssSelector("[for= 'edit-type-flres']"));
         private IWebElement Price => Driver.FindElement(By.Id("edit-purchase-price"));
         private IWebElement DownPayment => Driver.FindElement(By.Id("edit-down-payment"));
         private IWebElement DownPaymentPercentge => Driver.FindElement(By.Id("edit-down-payment-percentage"));
@@ -37,9 +37,9 @@ namespace Skaiciuokles.Page
             return this;
         }
 
-        public CarLeasingCalculatorPage ClickLeasingWhitresidualValue()
+        public CarLeasingCalculatorPage ClickLeasingWhitResidualValue()
         {
-            LeasingWhitresidualValue.Click();
+            LeasingWhitResidualValue.Click();
 
             return this;
         }
