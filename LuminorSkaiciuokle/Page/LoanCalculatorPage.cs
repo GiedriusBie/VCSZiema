@@ -113,12 +113,5 @@ namespace Skaiciuokles.Page
 
             return this;
         }
-
-        private void ClearField(IWebElement element)
-        {
-            element.Click();
-            element.SendKeys(Keys.Control + "a");
-            element.SendKeys(Keys.Backspace);
-        }
     }
 }

@@ -8,7 +8,7 @@ namespace Skaiciuokles.Page
     internal class CarLeasingCalculatorPage : BasePage
     {
         private const string PageAddress = "https://www.luminor.lt/lt/privatiems/auto-lizingas#tabblock";
-        private IWebElement LeasingWhitResidualValue => Driver.FindElement(By.CssSelector("[for= 'edit-type-flres']"));
+        private IWebElement LeasingWithResidualValue => Driver.FindElement(By.CssSelector("[for= 'edit-type-flres']"));
         private IWebElement Price => Driver.FindElement(By.Id("edit-purchase-price"));
         private IWebElement DownPayment => Driver.FindElement(By.Id("edit-down-payment"));
         private IWebElement DownPaymentPercentge => Driver.FindElement(By.Id("edit-down-payment-percentage"));
@@ -39,10 +39,11 @@ namespace Skaiciuokles.Page
 
         public CarLeasingCalculatorPage ClickLeasingWhitResidualValue()
         {
-            LeasingWhitResidualValue.Click();
+            LeasingWithResidualValue.Click();
 
             return this;
         }
+
         public CarLeasingCalculatorPage EnterResidualValue(string residualvalue)
         {
             ClearField(ResidualValue);
@@ -50,6 +51,7 @@ namespace Skaiciuokles.Page
 
             return this;
         }
+
         public CarLeasingCalculatorPage EnterPrice(string price)
         {
             ClearField(Price);
@@ -65,6 +67,7 @@ namespace Skaiciuokles.Page
 
             return this;
         }
+
         public CarLeasingCalculatorPage EnterDownPaymentPercentge(string downPaymentPercentge)
         {
             ClearField(DownPaymentPercentge);
@@ -72,6 +75,7 @@ namespace Skaiciuokles.Page
 
             return this;
         }
+
         public CarLeasingCalculatorPage EnterLeasingPeriod(string leasingPeriod)
         {
             ClearField(LeasingPeriod);
@@ -79,6 +83,7 @@ namespace Skaiciuokles.Page
 
             return this;
         }
+
         public CarLeasingCalculatorPage EnterInterestRate(string interestRate)
         {
             ClearField(InterestRate);
@@ -86,6 +91,7 @@ namespace Skaiciuokles.Page
 
             return this;
         }
+
         public CarLeasingCalculatorPage EnterMonthlySummaryPrice(string monthlySummaryPrice)
         {
             ClearField(MonthlySummaryPrice);
@@ -100,13 +106,5 @@ namespace Skaiciuokles.Page
 
             return this;
         }
-        private void ClearField(IWebElement element)
-        {
-            element.Click();
-            element.SendKeys(Keys.Control + "a");
-            element.SendKeys(Keys.Backspace);
-        }
-
-
     }
 }

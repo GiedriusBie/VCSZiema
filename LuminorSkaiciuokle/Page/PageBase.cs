@@ -38,6 +38,11 @@ namespace Skaiciuokles.Page
                 return false;
             }
         }
-
+          public void ClearField(IWebElement element)
+        {
+            element.Click();
+            element.SendKeys(Keys.Control + "a");
+            element.SendKeys(Keys.Backspace);
+        }
     }
 }
