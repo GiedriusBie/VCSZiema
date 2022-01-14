@@ -38,6 +38,7 @@ namespace Skaiciuokles.Page
                 return false;
             }
         }
+
           public void ClearField(IWebElement element)
         {
             element.Click();

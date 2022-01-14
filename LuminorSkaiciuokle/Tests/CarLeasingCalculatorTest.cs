@@ -8,19 +8,18 @@ namespace Skaiciuokles.Tests
         public static void MonthlyPaymentForCarWithResidualValueTest()
         {
             carLeasingCalculatorPage.NavigateToDefaultPage()
-
-                .ClickLeasingWhitResidualValue()
+                .ClickLeasingWithResidualValue()
                 .EnterPrice("100000")
                 .EnterDownPayment("15000")
                 .EnterLeasingPeriod("48")
                 .EnterResidualValue("30000")
                 .VerifyMonthlySummaryPrice("1 290");
-        }             
+        }      
+        
         [Test]
         public static void MonthlyPaymentForCarTest()
         {
              carLeasingCalculatorPage.NavigateToDefaultPage()
-
                 .ClickLeasingValue()
                 .EnterPrice("55000")                    
                 .EnterDownPayment("13500")

@@ -37,7 +37,7 @@ namespace Skaiciuokles.Page
             return this;
         }
 
-        public CarLeasingCalculatorPage ClickLeasingWhitResidualValue()
+        public CarLeasingCalculatorPage ClickLeasingWithResidualValue()
         {
             LeasingWithResidualValue.Click();
 
@@ -102,7 +102,7 @@ namespace Skaiciuokles.Page
 
         public CarLeasingCalculatorPage VerifyMonthlySummaryPrice(string expectedResult)
         {
-            Assert.AreEqual(expectedResult, MonthlySummaryPrice.Text, $"Monhly payment amount result is incorect. Expected result is {expectedResult}");
+            Assert.AreEqual(expectedResult, MonthlySummaryPrice.Text, $"Monthly payment amount result is incorect. Expected result is {expectedResult}");
 
             return this;
         }
