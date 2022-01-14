@@ -39,7 +39,7 @@ namespace Skaiciuokles.Page
             }
         }
 
-          public void ClearField(IWebElement element)
+        public void ClearField(IWebElement element)
         {
             element.Click();
             element.SendKeys(Keys.Control + "a");
