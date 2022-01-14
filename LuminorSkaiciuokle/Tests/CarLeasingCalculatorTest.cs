@@ -15,10 +15,8 @@ namespace Skaiciuokles.Tests
                 .EnterLeasingPeriod("48")
                 .EnterResidualValue("30000")
                 .VerifyMonthlySummaryPrice("1 290");
-
         }
-       
-        
+             
         [Test]
         public static void MonthlyPaymentForCarTest()
         {
@@ -29,12 +27,8 @@ namespace Skaiciuokles.Tests
                 .EnterDownPayment("13500")
                 .EnterLeasingPeriod("12")
                 .VerifyMonthlySummaryPrice("3 516");
-
         }
 
-
-
-        
     }
 }
 

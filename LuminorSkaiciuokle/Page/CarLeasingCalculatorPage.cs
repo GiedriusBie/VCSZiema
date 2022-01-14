@@ -16,11 +16,7 @@ namespace Skaiciuokles.Page
         private IWebElement InterestRate => Driver.FindElement(By.Id("edit-interest-rate"));
         private IWebElement MonthlySummaryPrice => Driver.FindElement(By.Id("monthly_summary_price"));
         private IWebElement LeasingValue => Driver.FindElement(By.CssSelector("[for = 'edit-type-fl']"));
-                                              
         private IWebElement ResidualValue => Driver.FindElement(By.Id("edit-residual-value"));
-
-
-
 
         public CarLeasingCalculatorPage(IWebDriver webdriver) : base(webdriver) { }
 
